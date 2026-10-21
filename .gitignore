@@ -1,0 +1,10 @@
+# Editor recovery files
+.*.un~
+*.swp
+*.swo
+*~
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
+*Zone.Identifier

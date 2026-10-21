@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitive Programming</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 40px auto; 
+            max-width: 800px; 
+            line-height: 1.6; 
+            padding: 10px;
+        }
+        h1 { color: #333; }
+        a { color: #8B0000; text-decoration: none; }
+        nav { 
+            text-align: center; 
+            margin-bottom: 20px; 
+        }
+        nav a { 
+            margin: 0 10px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            color: #8B0000; 
+        }
+        .container { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+        }
+        .text { 
+            flex: 1; 
+            min-width: 250px;
+        }
+        .photo { 
+            flex-shrink: 0; 
+            margin-left: 20px; 
+        }
+        .photo img { 
+            width: 100%; 
+            max-width: 250px; 
+            border-radius: 10px; 
+            display: block;
+        }
+        .section { margin-bottom: 20px; }
+        ul { padding-left: 20px; }
+        @media (max-width: 600px) {
+            body {
+                margin: 20px auto;
+                padding: 10px;
+            }
+            .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .photo {
+                margin: 20px 0 0 0;
+            }
+            .photo img {
+                max-width: 200px;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; 
+            flex-wrap: wrap;
+        }
+
+        .video {
+            flex: 1;
+            max-width: 300px;
+        }
+
+        .video video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .video figcaption {
+            text-align: center;
+            margin-top: 5px; 
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 10px;
+            flex: 2; 
+        }
+
+        .image-grid figure {
+            text-align: center;
+            width: 100%;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="research.html">Research</a> |
+        <a href="CompProg.html">Comp. Prog.</a>
+    </nav>
+
+    <div class="container">
+        <div class="text">
+            <h1>Competitive Programming</h1>
+            <p>At the beginning of my undergraduate studies, I became very interested in <a href="https://en.wikipedia.org/wiki/Competitive_programming">competitive programming</a>.  
+            The most famous competition is the <a href="https://icpc.global/">ICPC</a>, which consists of several phases until the World Finals.
+            In each phase a team of three members must solve as many problems as possible from a list of around 12 problems whithin 5 hours.
+            </p>
+            <p>
+                Here are some precious memories from my years as a contestant and some of my favorite problems.
+            </p>
+        </div>
+        <div class="photo">
+            <img src="imgs/logo_maratona.png" alt="Logo Maratona">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <figure class="video">
+                <video controls>
+                    <source src="imgs/video egito.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>World Finals - Luxor.</figcaption>
+            </figure>
+            <div class="image-grid">
+                <figure>
+                    <img src="imgs/Latam.jpg" alt="Latam">
+                    <figcaption>Latin America Regionals – Guadalajara.</figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/Astana.jpg" alt="Astana">
+                    <figcaption>World Finals - Astana.</figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/campo grande 3.jpg" alt="Campo Grande">
+                    <figcaption>Brazilian Finals - Campo Grande.</figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/gramado.jpg" alt="Gramado">
+                    <figcaption>Brazilian Finals - Gramado.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+      
+
+    <div class="section">
+        <h2>Favorite Problems</h2>
+        <p>Here are some of my favorite competitive programming problems.
+            Problems enter this list either because they made me excited about learning something new,
+            or because they are related to my favorite topics in CP:</p>
+        <ul class="problem-list">
+            <li><a href="https://codeforces.com/contest/1325/problem/A" target="_blank">Codeforces 628A - EhAb AnD gCd</a>, 
+            I like giving this problem to beginners!</li>
+            <li><a href="https://codeforces.com/gym/102392/problem/F" target="_blank">SEERC 2019 - Game on a Tree</a>,
+                what happens if the game is played on a directed graph? The answer is <a href="https://doi.org/10.1016/0304-3975(93)90026-P">surprising</a>.
+            </li>
+            <li><a href="https://cses.fi/problemset/task/2078" target="_blank">CSES - Eulerian Subgraphs</a>,
+                the solution with Burnside's lemma is my personal favorite.</li>
+            <li><a href="https://codeforces.com/contest/839/problem/E" target="_blank">Codeforces 428E - Mother of Dragons</a>,
+                you can actually prove Turán's theorem from it.</li>
+            <li><a href="https://dmoj.ca/problem/ioi07p5" target="_blank">IOI 2007 - Pairs</a>, 
+                I was shocked when I discovered this.</li>
+            <li><a href="https://codeforces.com/gym/105164/problem/H" target="_blank">2024 ICPC Gran Premio de Mexico - Highest Score APPQ</a>, 
+                such a weird way of thinking about nimbers.</li>
+            <li><a href="https://www.codechef.com/OCT19A/problems/CNNCT2/" target="_blank">CodeChef - Faulty System</a>,
+                or an improved version: Given a graph, find two disjoint spanning trees.
+            </li>
+            <li><a href="https://codeforces.com/contest/875/problem/F" target="_blank">Codeforces 441F - Royal Questions</a>,
+                thanks Kaio for solving this one with me and remembering it.
+            </li>
+            <li><a href="https://codeforces.com/problemset/problem/1523/D" target="_blank">Deltix Round, Spring 2021 - Love-Hate</a>,
+                this idea is so cool, and it was so rewarding to solve it in contest time.
+            </li>
+            <li><a href="Cubo_Embaralhado_seletivaIOI2024.pdf" target="_blank">Brazilian IOI Qualifiers 2023 - Shuffled Cube</a>,
+                I was a teacher and judge at the Brazilian IOI qualifiers for three years, and I created this problem!
+            </li>
+        </ul>
+        <p>Extra, not CP-related: I really like the book <em>Combinatorial Problems and Exercises</em> by László Lovász, 
+            and problems 3, 4, and 5 of the <em>Automorphisms of Graphs</em> section kind of blew my mind.</p>
+    </div>
+    
+</body>
+</html>

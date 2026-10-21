@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emanuel Juliano</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 40px auto; 
+            max-width: 800px; 
+            line-height: 1.6; 
+            padding: 10px;
+            text-align: justify;
+        }
+        h1 { color: #333; }
+        a { color: #8B0000; text-decoration: none; }
+        nav { 
+            text-align: center; 
+            margin-bottom: 20px; 
+        }
+        nav a { 
+            margin: 0 10px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            color: #8B0000; 
+        }
+        .container { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+        }
+        .text { 
+            flex: 1; 
+            min-width: 250px;
+        }
+        .photo { 
+            flex-shrink: 0; 
+            margin-left: 20px; 
+        }
+        .photo img { 
+            width: 100%; 
+            max-width: 250px; 
+            border-radius: 10px; 
+            display: block;
+        }
+        .section { margin-bottom: 20px; }
+        ul { padding-left: 20px; }
+        @media (max-width: 600px) {
+            body {
+                margin: 20px auto;
+                padding: 10px;
+            }
+            .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .photo {
+                margin: 20px 0 0 0;
+            }
+            .photo img {
+                max-width: 200px;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="research.html">Research</a> |
+        <a href="CompProg.html">Comp. Prog.</a>
+    </nav>
+
+    <div class="container">
+        <div class="text">
+            <h1>Emanuel Juliano</h1>
+            <p>Olá! I'm currently (since July 2023) a PhD student in the <a href="https://www.dcc.ufmg.br/">Computer Science Department</a> at UFMG, Belo Horizonte, Brazil, 
+                under the supervision of <a href="https://homepages.dcc.ufmg.br/~gabriel/">Gabriel Coutinho</a>. 
+                In 2025, I was a Research visitor at the <a href="https://www.tue.nl/en/">Eindhoven University of Technology</a>, 
+                the Netherlands, where I collaborated with <a href="https://aidaabiad.win.tue.nl/index.html">Aida Abiad</a>. 
+                In Fall 2026, I will be a visiting researcher in the <a href="https://uwaterloo.ca/combinatorics-and-optimization/">Combinatorics and Optimization Department</a> at University of Waterloo, 
+                collaborating with <a href="https://www.math.uwaterloo.ca/~cgodsil/">Chris Godsil</a>.
+                I am a recipient of the <a href="https://blog.google/company-news/outreach-and-initiatives/google-org/phd-fellowship-program-2025/">2025 Google PhD Fellowship</a> for my research in Algorithms and Optimization.</p>
+            <p>I mainly do <a href="research.html">research</a> in algebraic graph theory. My background is in eigenvalues of graphs, quantum computing, and parameterized algorithms. 
+                I am interested in studying these areas, as well as any funny topic in graph theory!
+            </p>
+            <!-- <p>
+                Before starting my PhD, I was passionate about <a href="CompProg.html">Competitive Programming</a>.
+                I really enjoy discussing problems and meeting new people, which makes this PhD journey especially rewarding.
+            </p> -->
+        </div>
+        <div class="photo">
+            <img src="imgs/photo.jpg" alt="Emanuel Juliano">
+        </div>
+    </div>
+
+    <p>You can download my CV in PDF format <a href="CV.pdf">here</a>.</p>
+
+    <div class="section">
+        <h2>Contact</h2>
+        <p>Feel free to reach out via email: emanuelsilva at dcc.ufmg.br.</p>
+    </div>
+    <div class="section">
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://scholar.google.com/citations?user=T8fT4HsAAAAJ&hl=pt-BR">Google Scholar</a></li>
+            <li><a href="http://lattes.cnpq.br/8407034880080239">Currículo Lattes</a></li>
+            <li><a href="https://www.linkedin.com/in/emanuel-juliano-66244117a/">Linkedin</a></li>
+            <li><a href="https://codeforces.com/profile/emaneru">Codeforces</a></li>
+        </ul>
+    </div>
+</body>
+</html>

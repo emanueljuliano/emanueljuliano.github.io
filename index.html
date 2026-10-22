@@ -49,16 +49,21 @@
 </head>
 <body class="home-page">
 
-    <nav>
-        <a href="./">Home</a> |
-        <a href="research.html">I write</a> |
-        <a href="talks.html">I speak</a> |
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <nav aria-label="Main navigation">
+        <a href="./" aria-current="page">Home</a>
+        <a href="research.html">I write</a>
+        <a href="talks.html">I speak</a>
         <a href="CompProg.html">Comp. Prog.</a>
     </nav>
+
+    <main id="main-content" tabindex="-1">
 
     <div class="container">
         <div class="text">
             <h1>Emanuel Juliano</h1>
+            <p class="profile-actions"><a href="CV.pdf">Download CV (PDF)</a><a href="#contact">Contact</a></p>
             <p>Olá! I'm currently (since July 2023) a PhD student in the <a href="https://www.dcc.ufmg.br/">Computer Science Department</a> at UFMG, Belo Horizonte, Brazil, 
                 under the supervision of <a href="https://homepages.dcc.ufmg.br/~gabriel/">Gabriel Coutinho</a>. 
                 In 2025, I was a Research visitor at the <a href="https://www.tue.nl/en/">Eindhoven University of Technology</a>, 
@@ -71,11 +76,9 @@
             </p>
         </div>
         <div class="photo">
-            <img src="imgs/photo.jpg" alt="Emanuel Juliano">
+            <img src="imgs/photo-500.webp" srcset="imgs/photo-250.webp 250w, imgs/photo-500.webp 500w" sizes="(max-width: 600px) 180px, 240px" width="500" height="653" fetchpriority="high" alt="Emanuel Juliano">
         </div>
     </div>
-
-    <p>You can download my CV in PDF format <a href="CV.pdf">here</a>.</p>
 
     <section class="section" id="selected-papers">
         <h2>Selected Papers</h2>
@@ -104,7 +107,7 @@
         <p>See what <a href="research.html">I write</a> for the full publication list.</p>
     </section>
 
-    <div class="section">
+    <div class="section" id="contact">
         <h2>Contact</h2>
         <p>Feel free to reach out via email: emanuelsilva [at] dcc [dot] ufmg [dot] br.</p>
     </div>
@@ -117,5 +120,6 @@
             <li><a href="https://codeforces.com/profile/emaneru">Codeforces</a></li>
         </ul>
     </div>
+    </main>
 </body>
 </html>

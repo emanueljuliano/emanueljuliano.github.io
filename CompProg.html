@@ -10,12 +10,16 @@
 </head>
 <body class="programming-page">
 
-    <nav>
-        <a href="./">Home</a> |
-        <a href="research.html">I write</a> |
-        <a href="talks.html">I speak</a> |
-        <a href="CompProg.html">Comp. Prog.</a>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <nav aria-label="Main navigation">
+        <a href="./">Home</a>
+        <a href="research.html">I write</a>
+        <a href="talks.html">I speak</a>
+        <a href="CompProg.html" aria-current="page">Comp. Prog.</a>
     </nav>
+
+    <main id="main-content" tabindex="-1">
 
     <div class="container">
         <div class="text">
@@ -29,7 +33,7 @@
             </p>
         </div>
         <div class="photo">
-            <img src="imgs/logo_maratona.png" alt="Logo Maratona">
+            <img src="imgs/logo-maratona-500.webp" srcset="imgs/logo-maratona-250.webp 250w, imgs/logo-maratona-500.webp 500w" sizes="(max-width: 600px) 150px, 240px" width="500" height="500" alt="Maratona de Programação logo">
         </div>
     </div>
 
@@ -37,7 +41,7 @@
         <h2>Gallery</h2>
         <div class="gallery">
             <figure class="video">
-                <video controls>
+                <video controls playsinline preload="none" poster="imgs/luxor-poster.webp" width="720" height="1280">
                     <source src="imgs/video egito.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -45,19 +49,19 @@
             </figure>
             <div class="image-grid">
                 <figure>
-                    <img src="imgs/Latam.jpg" alt="Latam">
+                    <img src="imgs/latam-960.webp" srcset="imgs/latam-480.webp 480w, imgs/latam-960.webp 960w" sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 860px) 30vw, 255px" width="960" height="638" loading="lazy" decoding="async" alt="ICPC Latin America Regional team in Guadalajara">
                     <figcaption>Latin America Regionals – Guadalajara.</figcaption>
                 </figure>
                 <figure>
-                    <img src="imgs/Astana.jpg" alt="Astana">
+                    <img src="imgs/astana-960.webp" srcset="imgs/astana-480.webp 480w, imgs/astana-960.webp 960w" sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 860px) 30vw, 255px" width="960" height="640" loading="lazy" decoding="async" alt="ICPC World Finals team in Astana">
                     <figcaption>World Finals - Astana.</figcaption>
                 </figure>
                 <figure>
-                    <img src="imgs/campo grande 3.jpg" alt="Campo Grande">
+                    <img src="imgs/campo-grande-960.webp" srcset="imgs/campo-grande-480.webp 480w, imgs/campo-grande-960.webp 960w" sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 860px) 30vw, 255px" width="960" height="640" loading="lazy" decoding="async" alt="Brazilian Finals team in Campo Grande">
                     <figcaption>Brazilian Finals - Campo Grande.</figcaption>
                 </figure>
                 <figure>
-                    <img src="imgs/gramado.jpg" alt="Gramado">
+                    <img src="imgs/gramado-960.webp" srcset="imgs/gramado-480.webp 480w, imgs/gramado-960.webp 960w" sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 860px) 30vw, 255px" width="960" height="637" loading="lazy" decoding="async" alt="Brazilian Finals team in Gramado">
                     <figcaption>Brazilian Finals - Gramado.</figcaption>
                 </figure>
             </div>
@@ -69,7 +73,7 @@
         <h2>Favorite Problems</h2>
         <p>Here are some of my favorite competitive programming problems.
             Problems enter this list either because they made me excited about learning something new,
-            or because they are related to my favorite topics in CP:</p>
+            or because they are related to my favorite topics in Comp. Prog.:</p>
         <ul class="problem-list">
             <li><a href="https://codeforces.com/contest/1325/problem/A" target="_blank">Codeforces 628A - EhAb AnD gCd</a>, 
             I like giving this problem to beginners!</li>
@@ -97,9 +101,10 @@
                 I was a teacher and judge at the Brazilian IOI qualifiers for three years, and I created this problem!
             </li>
         </ul>
-        <p>Extra, not CP-related: I really like the book <em>Combinatorial Problems and Exercises</em> by László Lovász, 
+        <p>Extra, not related to Comp. Prog.: I really like the book <em>Combinatorial Problems and Exercises</em> by László Lovász,
             and problems 3, 4, and 5 of the <em>Automorphisms of Graphs</em> section kind of blew my mind.</p>
     </div>
     
+    </main>
 </body>
 </html>

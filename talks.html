@@ -10,14 +10,22 @@
     </head>
 <body class="listing-page">
 
-    <nav>
-        <a href="./">Home</a> |
-        <a href="research.html">I write</a> |
-        <a href="talks.html">I speak</a> |
-        <a href="CompProg.html">Comp. Prog</a>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <nav aria-label="Main navigation">
+        <a href="./">Home</a>
+        <a href="research.html">I write</a>
+        <a href="talks.html" aria-current="page">I speak</a>
+        <a href="CompProg.html">Comp. Prog.</a>
     </nav>
 
+    <main id="main-content" tabindex="-1">
+
     <h1>I speak</h1>
+
+    <a class="page-illustration page-illustration--speak" href="imgs/i_speak.jpg" title="View full-size illustration">
+        <img src="imgs/i_speak.jpg" width="960" height="540" alt="A hand-drawn seminar illustration: small grids go into a microwave and emerge as a colored tiled sphere.">
+    </a>
 
     <div class="section" id="conferences">
         <h2>Conferences</h2>
@@ -129,5 +137,6 @@
         </ul>
     </div>
 
+    </main>
 </body>
 </html>
